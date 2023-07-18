@@ -1,6 +1,5 @@
 <?php
-	$authority="http://api.eliajimmy.net/";
-	require_once('home/composant/connexion/api/demande_connexion.php');
+	require_once('composant/connexion/api/post.php');
 ?>	
 
 	
@@ -8,29 +7,28 @@
 
 		<!--Composant1 : head du html!-->
 		<?php
-			require_once('home/composant/connexion/head.php')
+			require_once('composant/head.php')
 		?> 
 	
 		<body class="page-body login-page login-form-fall" data-url="http://neon.dev">
-
 
 			<div class="login-container">
 				
 			<!--Composant2 : header du body (logo, titre,...)!-->
 			<?php
-				require_once('home/composant/connexion/header.php')
+				require_once('composant/header.php')
 			?> 
 
 			<!--Composant3 : contenu du body (formulaire,...)!-->
 			<?php
-				require_once('home/composant/connexion/main.php')
+				require_once('composant/main.php')
 			?> 			
 
 			</div>
 
 			<!--Composant4 : Footer du body (Javascript,...)!-->
 			<?php
-				require_once('home/composant/connexion/footer.php')
+				require_once('composant/footer.php')
 			?> 
 
 		</body>
