@@ -57,9 +57,38 @@
 				</li>
 				<li>
 							<a href="?home">
-							<i class="fa fa-users"></i>
+							<i class="fa fa-bar-chart"></i>
 								<span class="title">Business intelligence</span>
 							</a>
+							<ul >
+						<li>
+							<a href="?page=ajouter_agent">
+							<i class="fa fa-line-chart"></i>
+								<span class="title">Indicateur</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperer_agents">
+							<i class="fa fa-exchange"></i>
+								<span class="title">Service Repartition</span>
+							</a>
+						</li>
+
+						<li>
+							<a  href="?page=importer_agents">
+							<i class="fa fa-history"></i>
+								<span class="title">Service Historique</span>
+							</a>
+						</li>
+						<li>
+							<a  href="?page=importer_agents">
+							<i class="fa fa-bar-chart"></i>
+								<span class="title">Service Progression</span>
+							</a>
+						</li>
+						
+					</ul>
 				</li> 
 
 				<li>
