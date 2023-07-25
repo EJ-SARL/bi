@@ -58,6 +58,24 @@
                     require_once('composant/agent/supprimer/api/delete.php'); 
                 }
 
+                else if($demande=='ajouter_indicateur')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/indicateur/ajout/api/post.php'); 
+                }
+            else if($demande=='modifier_indicateur')
+                {   
+                    
+                     //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/indicateur/modifier/api/put.php'); 
+                }
+            else if($demande=='supprimer_indicateur')
+                {
+                    
+                     //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/indicateur/supprimer/api/delete.php'); 
+                }
+
                
 
 
@@ -126,11 +144,30 @@
                     require_once('composant/dashboard/ihm/front.php'); 
                 }
 
+                if($page=='ajouter_indicateur')
+                {
+                    //Composant2 : recuperer la reponse de la demande
 
-           
-            
-           
+                     require_once('composant/indicateur/ajout/api/get_parametres.php');
 
+                    //require_once('composant/indicateur/ajout/ihm/demande_creation.php'); 
+                } 
+           
+                else  if($page=='recuperer_indicateurs')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/indicateur/recuperer/api/get_ressources.php'); 
+                }
+                else  if($page=='modifier_indicateur')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/indicateur/modifier/api/get_ressource.php'); 
+                }
+                else  if($page=='supprimer_indicateur')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/indicateur/supprimer/api/get_ressource.php'); 
+                }
    
            
            

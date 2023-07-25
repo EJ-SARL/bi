@@ -62,10 +62,51 @@
 							</a>
 							<ul >
 						<li>
-							<a href="?page=ajouter_agent">
-							<i class="fa fa-line-chart"></i>
+							<a href="??home">
+								<i class="fa fa-line-chart"></i>
 								<span class="title">Indicateur</span>
 							</a>
+
+								<ul >
+
+
+									<li>
+										<a href="?page=ajouter_indicateur">
+											<span class="title">Ajouter</span>
+										</a>
+									</li>
+
+									
+
+									<li>
+										<a href="?page=recuperer_indicateurs">  
+											<span class="title">Gerer</span>
+										</a>
+									</li>
+
+									
+									<li>
+										<a href="??home">
+											<span class="title">Projet</span>
+										</a>
+										<ul >
+
+												<li>
+													<a href="?page=ajouter_agent">
+														<span class="title">Ajouter</span>
+													</a>
+												</li>
+  
+												<li>
+													<a href="?page=recuperer_agent">
+														<span class="title">Gerer</span>
+													</a>
+												</li>
+
+										</ul>
+									</li>
+							
+								</ul>
 						</li>
 
 						<li>
