@@ -204,7 +204,13 @@
                     //Composant1 : recuperer la reponse de la demande
                     require_once('composant/indicateur/projet/supprimer/api/get_ressource.php'); 
                 }
+                if($page=='ajouter_repartition')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/repartition/ajout/api/get_parametres.php');
 
+                    
+                }
              
 
 

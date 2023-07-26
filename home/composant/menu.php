@@ -110,7 +110,7 @@
 						</li>
 
 						<li>
-							<a href="?page=recuperer_agents">
+							<a href="?page=ajouter_repartition">
 							<i class="fa fa-exchange"></i>
 								<span class="title">Service Repartition</span>
 							</a>
