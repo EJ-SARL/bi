@@ -53,18 +53,19 @@
 			<?php
 							
 			for($i=0; $i < count($indicateurs); $i++)
-				{         
+				{     
+					$j=$i+1;    
 					echo"                         
                			 <tr class='odd gradeX'>
-								<td>$i</td>
+								<td>$j</td>
 					<td > " . $indicateurs[$i]->projet ."</td>
 					<td>". $indicateurs[$i]->nom ."</td>
 					<td>". $indicateurs[$i]->description ."</td>
-					<td > ". $indicateurs[$i]->frequence ." </td>
+					<td > ". $indicateurs[$i]->frequence ." </td> 
 					<td >". $indicateurs[$i]->ordre."</td>
 					<td > ". $indicateurs[$i]->unite ." </td>
 					
-					<td> <a href='?page=modifier_indicateur&id=". $indicateurs[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> <a href='?page=supprimer_indicateur&id=". $indicateurs[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> <a href='?page=recuperer_indicateurs&id=". $indicateurs[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
+					<td> <a href='?page=modifier_indicateur&id=". $indicateurs[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> <a href='?page=supprimer_indicateur&id=". $indicateurs[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
 				</tr>";
 						         
 				}

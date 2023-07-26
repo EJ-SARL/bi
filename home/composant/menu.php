@@ -92,13 +92,13 @@
 										<ul >
 
 												<li>
-													<a href="?page=ajouter_agent">
+													<a href="?page=ajouter_projet">
 														<span class="title">Ajouter</span>
 													</a>
 												</li>
   
 												<li>
-													<a href="?page=recuperer_agent">
+													<a href="?page=recuperer_projets">
 														<span class="title">Gerer</span>
 													</a>
 												</li>

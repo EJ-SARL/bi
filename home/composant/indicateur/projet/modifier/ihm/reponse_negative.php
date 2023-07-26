@@ -5,7 +5,7 @@
 	</li>
 	<li>
 
-		<a href="?page=recuperer_agents">Agent</a>
+		<a href="?page=recuperer_projets">Projet</a>
 
 	</li>
 	<li class="active">
@@ -43,22 +43,11 @@
 							
 					<div class="panel-body">
 								
-						<form method="POST" action="index.php?demande=modifier_agent" role="form" class="form-horizontal form-groups-bordered">
+						<form method="POST" action="index.php?demande=modifier_projet" role="form" class="form-horizontal form-groups-bordered">
 
 						<input type="HIDDEN" name="id" value=<?php echo $id;?> >
 							<div class="form-group">		
-								<label class="col-sm-3 control-label">Prenom</label>
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-											<input type="text" name="prenom" value=<?php echo $prenom;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-										</div>
-									</div>
-							</div>
-		
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Nom</label>			
+								<label class="col-sm-3 control-label">Nom</label>
 									<div class="col-sm-5">
 										<div class="input-group">
 											<span class="input-group-addon"><i class="entypo-user"></i></span>
@@ -68,65 +57,17 @@
 									</div>
 							</div>
 		
-							
+							<div class="form-group">		
+								<label class="col-sm-3 control-label">Description</label>			
+									<div class="col-sm-5">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="entypo-user"></i></span>
+											<input type="text" name="description" value=<?php echo $description;?> class="form-control">
+											<span class="input-group-addon"><i class="entypo-user"></i></span>
+										</div>
+									</div>
+							</div>
 		
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">E-mail</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-mail"></i></span>
-											<input type="text" name="email" value=<?php echo $email;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-mail"></i></span>
-										</div>
-									</div>
-							</div>
-
-							<div class="form-group">		
-
-								<label class="col-sm-3 control-label">Role</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-											<input type="text" name="role" value=<?php echo $role;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-										</div>
-									</div>
-							</div>
-
-							<div class="form-group">		
-
-								<label class="col-sm-3 control-label">Telephone</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-phone"></i></span>
-											<input type="text" name="telephone" value=<?php echo $telephone;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-phone"></i></span>
-										</div>
-									</div>
-							</div>
-
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Mot de passe</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-key"></i></span>
-											<input type="password" name="password"   class="form-control">
-											<span class="input-group-addon">**</span>
-										</div>
-									</div>
-							</div>
-
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Confirmer</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-key"></i></span>
-											<input type="password" name="confirmPassword" class="form-control">
-											<span class="input-group-addon">**</span>
-										</div>
-									</div>
-							</div>
-							
 							<div class="form-group">
 								<div class="col-sm-offset-3 col-sm-5">
 									<button type="submit" class="btn btn-success">Modifier</button>

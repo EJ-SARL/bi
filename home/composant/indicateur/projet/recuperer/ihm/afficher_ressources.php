@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer_agents">Agent</a>
+		<a href="?page=recuperer_projets">Projet</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>
@@ -37,14 +37,11 @@
 				<tr>
 				    <TH>#</TH>
 					
-					<th>Prenom</th>
+					
 					<th>Nom</th>
-					<th >Sexe</th>
-					<th>Telephone</th>
-					<th >E-mail</th>
-					<th >Direction</th>
-					<th >Departement</th>
-					<th >Fonction</th>
+					<th >Description</th>
+					
+					
 					<th></th>
 	
 				</tr>
@@ -53,20 +50,18 @@
 				
 			<?php
 							
-			for($i=0; $i < count($agents); $i++)
-				{         
+			for($i=0; $i < count($projets); $i++)
+				{   
+					$j=$i+1;      
 					echo"                         
                			 <tr class='odd gradeX'>
-								<td>$i</td>
-					<td > " . $agents[$i]->prenom ."</td>
-					<td>". $agents[$i]->nom ."</td>
-					<td>". $agents[$i]->sexe ."</td>
-					<td > ". $agents[$i]->telephone ." </td>
-					<td >". $agents[$i]->email."</td>
-					<td > ". $agents[$i]->direction ." </td>
-					<td>". $agents[$i]->departement."</td>
-					<td>". $agents[$i]->fonction ."</td>
-					<td> <a href='?page=modifier_agent&id=". $agents[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> <a href='?page=supprimer_agent&id=". $agents[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> <a href='?page=recuperer_agent&id=". $agents[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
+								<td>$j</td>
+					
+					<td>". $projets[$i]->nom ."</td>
+					<td>". $projets[$i]->description ."</td>
+					
+					
+					<td> <a href='?page=modifier_projet&id=". $projets[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> <a href='?page=supprimer_projet&id=". $projets[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
 				</tr>";
 						         
 				}
@@ -76,14 +71,10 @@
 				<tr>
 				<TH>#</TH>
 					
-					<th>Prenom</th>
+					
 					<th>Nom</th>
-					<th >Sexe</th>
-					<th>Telephone</th>
-					<th >E-mail</th>
-					<th >Direction</th>
-					<th >Departement</th>
-					<th >Fonction</th>
+					<th >Description</th>
+					
 					<th></th>
 	
 				</tr>
@@ -92,7 +83,7 @@
 		
 		<br />
 		
-	
+	  
 
 		
 	

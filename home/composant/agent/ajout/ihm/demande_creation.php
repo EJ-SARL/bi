@@ -106,38 +106,7 @@
 					</div>
 
 					<div class="form-group">		
-<<<<<<< HEAD
 						<label class="col-sm-3 control-label">Departement</label>
-=======
-						<label class="col-sm-3 control-label">Direction <abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select name="direction" id="direction"  class="form-control">
-										<option value="">--Selectionner une Direction--</option>
-										<?php
-											for($i=0; $i < count($directions); $i++)
-												{         
-													echo"  
-															<option value=" . $directions[$i]->id ."> " . $directions[$i]->direction ."</option>                       
-															
-													";
-																
-												}
-										?>
-										
-									</select>
-									
-									
-
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Departement <abbr style="color:green; font-size:15px;">**</abbr></label>
->>>>>>> 2f12812125f62850f03c36ef8c1f0c21289d0052
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
@@ -168,13 +137,8 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-<<<<<<< HEAD
 									<select name="client" id="client"  class="form-control">
 										<option value="">--Selectionner une Fonction--</option>
-=======
-									<select name="fonction" id="fonction"  class="form-control">
-										<option value="">--Selectionner un Fonction--</option>
->>>>>>> 2f12812125f62850f03c36ef8c1f0c21289d0052
 										<?php
 											for($i=0; $i < count($fonctions); $i++)
 												{         

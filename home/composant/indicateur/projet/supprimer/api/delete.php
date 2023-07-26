@@ -3,12 +3,12 @@
 $id=$_GET['id'];
 
 //URI
-$uri = $authority."/agent/".$id;
+$uri = $authority."/indicateur/".$id;
 
 $result=curl_delete($uri, $token);
 
     $obj = json_decode($result);                      
-    $agents= $obj->agent;
+    $indicateurs= $obj->indicateur;
 
     $code =  $obj->code;
 
@@ -16,11 +16,11 @@ $result=curl_delete($uri, $token);
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/agent/supprimer/ihm/reponse_positive.php'); 
+            require_once('composant/indicateur/supprimer/ihm/reponse_positive.php'); 
         }
         else
         {
-            echo  $clients;  
+            echo  $indicateurs;  
         }
 
 

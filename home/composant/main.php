@@ -75,10 +75,24 @@
                      //Composant1 : recuperer la reponse de la demande
                     require_once('composant/indicateur/supprimer/api/delete.php'); 
                 }
+                else if($demande=='ajouter_projet')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/indicateur/projet/ajout/api/post.php'); 
+                }
+                else if($demande=='modifier_projet')
+                {   
+                    
+                     //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/indicateur/projet/modifier/api/put.php'); 
+                }
 
-               
-
-
+                else if($demande=='supprimer_projet')
+                {
+                    
+                     //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/indicateur/projet/supprimer/api/delete.php'); 
+                }
 
 
 
@@ -168,9 +182,28 @@
                     //Composant1 : recuperer la reponse de la demande
                     require_once('composant/indicateur/supprimer/api/get_ressource.php'); 
                 }
-   
-           
-           
+                if($page=='ajouter_projet')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+
+                    require_once('composant/indicateur/projet/ajout/ihm/demande_creation.php'); 
+                } 
+                else  if($page=='modifier_projet')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/indicateur/projet/modifier/api/get_ressource.php'); 
+                }
+                else  if($page=='recuperer_projets')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/indicateur/projet/recuperer/api/get_ressources.php'); 
+                }
+                
+                else  if($page=='supprimer_projet')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/indicateur/projet/supprimer/api/get_ressource.php'); 
+                }
 
              
 

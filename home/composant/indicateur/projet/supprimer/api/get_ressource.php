@@ -3,31 +3,33 @@
 $id=$_GET['id'];
 
 //URI
-$uri = $authority."/agent/".$id;
+$uri = $authority."/projet/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
-    $agents= $obj->agent;
+    $projets= $obj->projet;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $prenom=$agents[0]->prenom; 
-            $nom=$agents[0]->nom;
-            $email=$agents[0]->email;
-            $telephone=$agents[0]->telephone;
-            $id=$agents[0]->id;
+             
+            $nom=$projets[0]->nom;
+
+            $description=$projets[0]->description;
+            
+            $id=$projets[0]->id;
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/agent/supprimer/ihm/demande_supprimer.php'); 
+            require_once('composant/indicateur/projet/supprimer/ihm/demande_supprimer.php'); 
         }
-        else
+        else  
         {
-            echo  $clients;  
+            echo $projets;  
         }
 
 
 
+        
 
 ?>

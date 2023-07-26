@@ -1,13 +1,13 @@
 <?php
 
-$uri = $authority."/agent/";
+$uri = $authority."/projet/";
    
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $agents= $obj->agent;
+    $projets= $obj->projet; 
 
     $code =  $obj->code;
 
@@ -15,11 +15,11 @@ $result=curl_get($uri, $token);
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/agent/recuperer/ihm/afficher_ressources.php'); 
+            require_once('composant/indicateur/projet/recuperer/ihm/afficher_ressources.php'); 
         }
         else
         {
-            echo  $clients;  
+            echo  '$indicateurs';  
         }
 
 

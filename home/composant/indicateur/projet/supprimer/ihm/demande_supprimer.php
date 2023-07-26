@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer_agents">Agent</a>
+		<a href="?page=recuperer_projets">Projet</a>
 	</li>
 	<li class="active">
 		<strong>Supprimer</strong>
@@ -15,7 +15,7 @@
 <div class="row">
 
 <div class="col-md-12">
-	<div class="alert alert-danger"><strong>Voulez-vous supprimer l'utilisateur ci-dessous ? .</strong> <a href='?page=supprimer_agents'><button type='button' class='btn btn-blue'>NON</button></a> <a href='?demande=supprimer_agent&id=<?php echo $id;?>'><button type='button' class='btn btn-red'>OUI</button></a></div>
+	<div class="alert alert-danger"><strong>Voulez-vous supprimer le projet ci-dessous ? .</strong> <a href='?page=recuperer_projets'><button type='button' class='btn btn-blue'>NON</button></a> <a href='?demande=supprimer_projet&id=<?php echo $id;?>'><button type='button' class='btn btn-red'>OUI</button></a></div>
 </div>
 
 </div>
@@ -30,12 +30,13 @@
 					<thead>
 						<tr>
 						 	<th width='15%'>ID</th>
-							<th>Prenom</th>
+							<th>Projet</th>
 							<th>Nom</th>
-							
-							<th >E-mail</th>
-							<th >Telephone</th>
-							
+							<th >Description</th>
+							<th >Frequence</th>
+							<th >Ordre</th>
+							<th >Unite</th>
+				 			
 						</tr>
 					</thead>
 					<tbody>
@@ -43,7 +44,7 @@
 							<?php
 							
 								
-										echo"<tr><td>". $id." </td><td>". $prenom ." </td><td> " . $nom ." </td><td> ". $email." </td><td> ". $telephone." </td><tr>";
+										echo"<tr><td>". $id." </td><td>". $projet." </td><td> " . $nom ." </td><td> ". $description." </td><td> ". $frequence." </td><td> ". $ordre." </td><td> ". $unite." </td><tr>";
 								
 							?>
 						</tr>				
@@ -52,3 +53,4 @@
 				
 			</div>
 		</div>
+  

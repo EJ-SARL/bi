@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer_agents">Agent</a>
+		<a href="?page=recuperer_projets">projet</a>
 	</li>
 	<li class="active">
 		<strong>Ajouter</strong>
@@ -35,106 +35,56 @@
 											
 						</div>
 										
-						<h2 style="text-align: center;">Ajouter un agent </h2>
+						<h2 style="text-align: center;">Ajouter un projet</h2>
 		
 					</div>
 							
 					<div class="panel-body">
 								
-						<form method="POST" action="index.php?demande=ajouter_agent" role="form" class="form-horizontal form-groups-bordered">
-					
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Prenom</label>
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-											<input type="text" name="prenom" value=<?php echo $prenom;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-										</div>
-									</div>
-							</div>
-		
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Nom</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-											<input type="text" name="nom" value=<?php echo $nom;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-										</div>
-									</div>
-							</div>
-		
-							
-		
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">E-mail</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-mail"></i></span>
-											<input type="text" name="email" value=<?php echo $email;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-mail"></i></span>
-										</div>
-									</div>
-							</div>
+					<form method="POST" action="index.php?demande=ajouter_projet"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+			
 
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Telephone</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-phone"></i></span>
-											<input type="text" name="telephone" value=<?php echo $telephone;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-phone"></i></span>
-										</div>
-									</div>
-							</div>
-
-
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Role</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-mail"></i></span>
-											<input type="text" name="email" value=<?php echo $role;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-mail"></i></span>
-										</div>
-									</div>
-							</div>
-
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Mot de passe</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-key"></i></span>
-											<input type="password" name="password"   class="form-control">
-											<span class="input-group-addon">**</span>
-										</div>
-									</div>
-							</div>
-
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Confirmer</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-key"></i></span>
-											<input type="password" name="confirmPassword" class="form-control">
-											<span class="input-group-addon">**</span>
-										</div>
-									</div>
-							</div>
-							
-							<div class="form-group">
-								<div class="col-sm-offset-3 col-sm-5">
-									<button type="submit" class="btn btn-success">Ajouter</button>
+			
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Nom  <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="nom" class="form-control" placeholder="nom de l'indicateur" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
-									
-						</form>
-								
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Description<abbr style="color:green; font-size:15px;">**</abbr></label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="description" class="form-control" placeholder=" description" required="required">
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+					
+					
+     
+
+	
+					<div class="form-group">
+						<div class="col-sm-offset-3 col-sm-5">
+							<button type="submit" onclick="validate()" class="btn btn-success btn-block btn-login">
+					<i class="entypo-right-open-mini">Ajouter</i>
+					</div>
 					</div>
 							
-				</div>
-					
+				</form>
+						
 			</div>
-				
+					
 		</div>
+			
+	</div>
+		
+</div>	
