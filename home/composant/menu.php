@@ -117,13 +117,13 @@
 						</li>
 
 						<li>
-							<a  href="?page=importer_agents">
+							<a href="?page=ajouter_historique">
 							<i class="fa fa-history"></i>
 								<span class="title">Service Historique</span>
 							</a>
 						</li>
 						<li>
-							<a  href="?page=importer_agents">
+							<a href="?page=ajouter_progression">
 							<i class="fa fa-bar-chart"></i>
 								<span class="title">Service Progression</span>
 							</a>

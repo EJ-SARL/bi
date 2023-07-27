@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer_projets">Projet</a>
+		<a href="?page=recuperer_historiques">Historique</a>
 	</li>
 	<li class="active">
 		<strong>Ajouter</strong>
@@ -29,31 +29,20 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=ajouter_projet"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=ajouter_historique"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 			
 
 			
-					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Nom  <abbr style="color:green; font-size:15px;">**</abbr></label>
+				<div class="form-group">		
+						<label class="col-sm-3 control-label">Date<abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="nom" class="form-control" placeholder="nom de l'indicateur" required="required">
-									<span class="input-group-addon"><i class="r"></i></span>
-								</div>
-							</div>
-					</div>
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Description<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="description" class="form-control" placeholder=" description" required="required">
+									<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+									<input type="date" name="date_naissance" class="form-control" placeholder=" montrer la date" required="required">
 									<span class="input-group-addon"><i class=""></i></span>
 								</div>
 							</div>
-					</div>
+					</div> 
 
 					
 					
@@ -63,7 +52,7 @@
 					<div class="form-group">
 						<div class="col-sm-offset-3 col-sm-5">
 							<button type="submit" onclick="validate()" class="btn btn-success btn-block btn-login">
-					<i class="entypo-right-open-mini">Ajouter</i>
+					<i class="entypo-right-open-mini">OK</i>
 					</div>
 					</div>
 							

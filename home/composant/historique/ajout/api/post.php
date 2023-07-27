@@ -1,39 +1,39 @@
 
 <?php
-$uri =  $authority.'/projet/';
+$uri =  $authority.'/historique/';
 //Recuperer les variables POST
 
-$nom=$_POST['nom'];
-$description=$_POST['description'];
+$date=$_POST['date'];
+
 
 $data = array(
     
     
-    'nom' => $nom,
-    'description' => $description,
+    'date' => $date,
+    
     
 	
 );
 $result=curl_post($uri, $token, $data);
-$projets=json_decode($result);
+$dates=json_decode($result);
 
-$code =   $projets->code;
+$code =   $dates->code;
     
 if($code ==201)
         {   
            
-            $nom = $projets->nom;
-            $description =  $projets->description;
+            $date = $dates->date;
             
-            $id = $projets->id;
+            
+            $id = $dates->id;
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/indicateur/projet/ajout/ihm/reponse_positive.php'); 
+            require_once('composant/historique/ajout/ihm/reponse_positive.php'); 
         }
     else    
         {
             
             //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/indicateur/projet/ajout/ihm/reponse_negative.php');   
+            require_once('composant/historique/ajout/ihm/reponse_negative.php');   
         }
 
 

@@ -211,8 +211,20 @@
 
                     
                 }
-             
+                if($page=='ajouter_historique')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/historique/ajout/ihm/demande_creation.php'); 
 
+                    
+                }
+                if($page=='ajouter_progression')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/progression/ajout/api/get_parametres.php'); 
+
+                    
+                }
 
             
               
