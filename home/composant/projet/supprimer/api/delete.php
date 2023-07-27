@@ -1,13 +1,14 @@
 <?php
 
-$uri = $authority."/agent/";
-   
+$id=$_GET['id'];
 
-$result=curl_get($uri, $token);
+//URI
+$uri = $authority."/projet/".$id;
+
+$result=curl_delete($uri, $token);
 
     $obj = json_decode($result);                      
-    
-    $agents= $obj->agent;
+    $projets= $obj->projet;
 
     $code =  $obj->code;
 
@@ -15,12 +16,15 @@ $result=curl_get($uri, $token);
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/agent/recuperer/ihm/afficher_ressources.php'); 
+            require_once('composant/projet/supprimer/ihm/reponse_positive.php'); 
         }
         else
         {
-            echo  $clients;  
+            echo  $projets;  
         }
+
+
+
 
 
 ?>

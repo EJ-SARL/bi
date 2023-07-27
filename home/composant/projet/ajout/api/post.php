@@ -27,13 +27,13 @@ if($code ==201)
             
             $id = $projets->id;
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/indicateur/projet/ajout/ihm/reponse_positive.php'); 
+            require_once('composant/projet/ajout/ihm/reponse_positive.php'); 
         }
     else    
         {
             
             //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/indicateur/projet/ajout/ihm/reponse_negative.php');   
+            require_once('composant/projet/ajout/ihm/reponse_negative.php');   
         }
 
 

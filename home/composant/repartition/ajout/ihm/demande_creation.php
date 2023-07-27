@@ -40,7 +40,7 @@
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 									<select name="projet" id="projet"  class="form-control">
-										<option value="">--Selectionner un le projet--</option>
+										<option value="">--Selectionner  le projet--</option>
 										<?php
 											for($i=0; $i < count($projets); $i++)
 												{         

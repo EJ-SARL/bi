@@ -29,7 +29,7 @@ $result=curl_put($uri, $token, $data);
           
            
                 //Intregration de l'IHM affichant la reponse positive
-                require_once('composant/indicateur/projet/modifier/ihm/reponse_positive.php'); 
+                require_once('composant/projet/modifier/ihm/reponse_positive.php'); 
             }
             else
             {

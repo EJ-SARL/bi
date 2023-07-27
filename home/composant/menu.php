@@ -32,64 +32,20 @@
 			</header>      
 			<ul id="main-menu" class="main-menu">
 			
-				<li class="has-sub">
-					<a href="">
-					<i class="fa fa-users"></i>
-						<span class="title">Operationnel</span>
-					</a>
-					<ul >
-
-					<li>
-							<a href="??home">
-								<span class="title">Back-office</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=front_office">
-								<span class="title">Front-Office</span>
-							</a>
-						</li>
-
-					
-						
-					</ul>
-				</li>
+				
 				<li>
 							<a href="?home">
 							<i class="fa fa-bar-chart"></i>
 								<span class="title">Business intelligence</span>
 							</a>
 							<ul >
-						<li>
-							<a href="??home">
-								<i class="fa fa-line-chart"></i>
-								<span class="title">Indicateur</span>
-							</a>
 
-								<ul >
-
-
-									<li>
-										<a href="?page=ajouter_indicateur">
-											<span class="title">Ajouter</span>
-										</a>
-									</li>
-
-									
-
-									<li>
-										<a href="?page=recuperer_indicateurs">  
-											<span class="title">Gerer</span>
-										</a>
-									</li>
-
-									
-									<li>
+								<li>
 										<a href="??home">
+										<i class="fa-solid fa-list"></i>
 											<span class="title">Projet</span>
 										</a>
-										<ul >
+					 					<ul >
 
 												<li>
 													<a href="?page=ajouter_projet">
@@ -105,6 +61,31 @@
 
 										</ul>
 									</li>
+								<li>
+									<a href="??home">
+										<i class="fa fa-line-chart"></i>
+										<span class="title">Indicateur</span>
+									</a>
+
+										<ul >
+
+
+											<li>
+												<a href="?page=ajouter_indicateur">
+													<span class="title">Ajouter</span>
+												</a>
+											</li>
+
+											
+
+											<li>
+												<a href="?page=recuperer_indicateurs">  
+													<span class="title">Gerer</span>
+												</a>
+											</li>
+
+											
+											
 							
 								</ul>
 						</li>
@@ -112,58 +93,25 @@
 						<li>
 							<a href="?page=ajouter_repartition">
 							<i class="fa fa-exchange"></i>
-								<span class="title">Service Repartition</span>
+								<span class="title">Repartition</span>
 							</a>
 						</li>
 
 						<li>
 							<a href="?page=ajouter_historique">
 							<i class="fa fa-history"></i>
-								<span class="title">Service Historique</span>
+								<span class="title">Historique</span>
 							</a>
 						</li>
 						<li>
 							<a href="?page=ajouter_progression">
 							<i class="fa fa-bar-chart"></i>
-								<span class="title">Service Progression</span>
+								<span class="title"> Progression</span>
 							</a>
 						</li>
 						
 					</ul>
 				</li> 
-
-				<li>
-							<a href="?home">
-							<i class="fa fa-users"></i>
-								<span class="title">Referentiel</span>
-							</a>
-				</li> 						
-				<li class="has-sub">
-					<a href="forms-main.html">
-					<i class="fa fa-users"></i>
-						<span class="title">Agent</span>
-					</a>
-					<ul >
-						<li>
-							<a href="?page=ajouter_agent">
-								<span class="title">Ajouter</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=recuperer_agents">
-								<span class="title">Gerer</span>
-							</a>
-						</li>
-
-						<li>
-							<a  href="?page=importer_agents">
-								<span class="title">Importer</span>
-							</a>
-						</li>
-						
-					</ul>
-				</li>
 
 			
 

@@ -40,23 +40,8 @@
                     require_once('composant/client/importer_excel/api/import.php'); 
                 }
 
-            else if($demande=='ajouter_agent')
-                {
-                    //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/agent/ajout/api/post.php'); 
-                }
-            else if($demande=='modifier_agent')
-                {
-                    
-                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/agent/modifier/api/put.php'); 
-                }
-            else if($demande=='supprimer_agent')
-                {
-                    
-                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/agent/supprimer/api/delete.php'); 
-                }
+            
+           
 
                 else if($demande=='ajouter_indicateur')
                 {
@@ -78,20 +63,20 @@
                 else if($demande=='ajouter_projet')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/indicateur/projet/ajout/api/post.php'); 
+                    require_once('composant/projet/ajout/api/post.php'); 
                 }
                 else if($demande=='modifier_projet')
                 {   
                     
                      //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/indicateur/projet/modifier/api/put.php'); 
+                    require_once('composant/projet/modifier/api/put.php'); 
                 }
 
                 else if($demande=='supprimer_projet')
                 {
                     
                      //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/indicateur/projet/supprimer/api/delete.php'); 
+                    require_once('composant/projet/supprimer/api/delete.php'); 
                 }
 
 
@@ -186,23 +171,23 @@
                 {
                     //Composant2 : recuperer la reponse de la demande
 
-                    require_once('composant/indicateur/projet/ajout/ihm/demande_creation.php'); 
+                    require_once('composant/projet/ajout/ihm/demande_creation.php'); 
                 } 
                 else  if($page=='modifier_projet')
                 {
                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/indicateur/projet/modifier/api/get_ressource.php'); 
+                    require_once('composant/projet/modifier/api/get_ressource.php'); 
                 }
                 else  if($page=='recuperer_projets')
                 {
                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/indicateur/projet/recuperer/api/get_ressources.php'); 
+                    require_once('composant/projet/recuperer/api/get_ressources.php'); 
                 }
                 
                 else  if($page=='supprimer_projet')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/indicateur/projet/supprimer/api/get_ressource.php'); 
+                    require_once('composant/projet/supprimer/api/get_ressource.php'); 
                 }
                 if($page=='ajouter_repartition')
                 {
