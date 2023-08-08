@@ -9,7 +9,7 @@ $description=$_POST['description'];
 $data = array(
     
     
-    'nom' => $nom,
+    'projet' => $nom,
     'description' => $description,
     
 	
@@ -22,7 +22,7 @@ $code =   $projets->code;
 if($code ==201)
         {   
            
-            $nom = $projets->nom;
+            $nom = $projets->projet;
             $description =  $projets->description;
             
             $id = $projets->id;

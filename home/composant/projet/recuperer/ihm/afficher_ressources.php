@@ -57,7 +57,7 @@
                			 <tr class='odd gradeX'>
 								<td>$j</td>
 					
-					<td>". $projets[$i]->nom ."</td>
+					<td>". $projets[$i]->projet ."</td>
 					<td>". $projets[$i]->description ."</td>
 					
 					

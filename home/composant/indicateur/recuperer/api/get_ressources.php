@@ -5,9 +5,9 @@ $uri = $authority."/indicateur/";
 
 $result=curl_get($uri, $token);
 
-    $obj = json_decode($result);                      
+$obj = json_decode($result);                      
     
-    $indicateurs= $obj->indicateur; 
+$indicateurs= $obj->indicateur; 
 
     $code =  $obj->code;
 

@@ -8,6 +8,7 @@ $uri = $authority."/projet/".$id;
 $result=curl_delete($uri, $token);
 
     $obj = json_decode($result);                      
+    
     $projets= $obj->projet;
 
     $code =  $obj->code;

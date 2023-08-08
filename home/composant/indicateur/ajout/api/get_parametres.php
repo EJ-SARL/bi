@@ -1,6 +1,6 @@
 <?php
 
-    $uri =  $authority.'/process/';
+    $uri =  $authority.'/projet/';
 
     $result=curl_get($uri,$token);
 

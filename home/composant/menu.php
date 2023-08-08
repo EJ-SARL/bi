@@ -1,8 +1,4 @@
-<!-- Active menu dans les entites -->
-<?php  require_once('active_menu.php'); ?>
-
 <div class="sidebar-menu">
-
 		<div class="sidebar-menu-inner">
 			
 			<header class="logo-env">
@@ -98,7 +94,7 @@
 						</li>
 
 						<li>
-							<a href="?page=ajouter_historique">
+							<a href="?page=historique">
 							<i class="fa fa-history"></i>
 								<span class="title">Historique</span>
 							</a>

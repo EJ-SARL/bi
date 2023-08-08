@@ -15,14 +15,14 @@ $result=curl_get($uri, $token);
 
     if($code ==200)
         {   
-            $projet=$indicateurs[0]->projet; 
-            $nom=$indicateurs[0]->nom;
-            $description=$indicateurs[0]->description;
-            $frequence=$indicateurs[0]->frequence;
-            $ordre=$indicateurs[0]->ordre;
-            $unite=$indicateurs[0]->unite;
+            $projet=$indicateurs->projet_id; 
+            $nom=$indicateurs->indicateur;
+            $description=$indicateurs->description;
+            $frequence=$indicateurs->frequence;
+            $ordre=$indicateurs->ordre;
+            $unite=$indicateurs->unite;
             
-            $id=$indicateurs[0]->id;
+            $id=$indicateurs->id;
             //Intregration de l'IHM affichant la reponse positive
             require_once('composant/indicateur/modifier/ihm/demande_modification.php'); 
         }

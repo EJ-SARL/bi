@@ -30,12 +30,10 @@
 					<thead>
 						<tr>
 						 	<th width='15%'>ID</th>
-							<th>Projet</th>
+							
 							<th>Nom</th>
 							<th >Description</th>
-							<th >Frequence</th>
-							<th >Ordre</th>
-							<th >Unite</th>
+							
 				 			
 						</tr>
 					</thead>
@@ -44,7 +42,7 @@
 							<?php
 							
 								
-										echo"<tr><td>". $id." </td><td>". $projet." </td><td> " . $nom ." </td><td> ". $description." </td><td> ". $frequence." </td><td> ". $ordre." </td><td> ". $unite." </td><tr>";
+										echo"<tr><td>". $id." </td><td> " . $nom ." </td><td> ". $description." </td><tr>";
 								
 							?>
 						</tr>				

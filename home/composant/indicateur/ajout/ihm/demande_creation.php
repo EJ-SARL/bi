@@ -99,8 +99,8 @@
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 									<select  name="ordre" id="monselect"  class="form-control" required="required">
 									<option value="" selected>Ordre</option>
-										<option value="Masculin">Croissant</option>
-										<option value="Femmin">Decroissant</option>
+										<option value="0">Croissant</option>
+										<option value="1">Decroissant</option>
                                     </select>
 									<span class="input-group-addon"><i class=""></i></span>
 								</div>

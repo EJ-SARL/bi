@@ -58,8 +58,8 @@
 					echo"                         
                			 <tr class='odd gradeX'>
 								<td>$j</td>
-					<td > " . $indicateurs[$i]->projet ."</td>
-					<td>". $indicateurs[$i]->nom ."</td>
+					<td > " . $indicateurs[$i]->projet_id ."</td>
+					<td>". $indicateurs[$i]->indicateur ."</td>
 					<td>". $indicateurs[$i]->description ."</td>
 					<td > ". $indicateurs[$i]->frequence ." </td> 
 					<td >". $indicateurs[$i]->ordre."</td>

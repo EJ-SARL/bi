@@ -196,10 +196,10 @@
 
                     
                 }
-                if($page=='ajouter_historique')
+                if($page=='historique')
                 {
                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/historique/ajout/ihm/demande_creation.php'); 
+                    require_once('composant/historique/visualisation/index.php'); 
 
                     
                 }

@@ -11,7 +11,7 @@ $description=$_POST['description'];
 $data = array(
     
    
-    'nom' => $nom,
+    'projet' => $nom,
     'description' => $description,
     
 	
@@ -23,10 +23,10 @@ $result=curl_put($uri, $token, $data);
     if($code ==200)
         {   
            
-            $nom =   $projets->nom;
+            $nom =   $projets->projet;
             $description =   $projets->description;
             
-          
+        
            
                 //Intregration de l'IHM affichant la reponse positive
                 require_once('composant/projet/modifier/ihm/reponse_positive.php'); 

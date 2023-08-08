@@ -15,7 +15,7 @@ $result=curl_get($uri, $token);
     if($code ==200)
         {   
              
-            $nom= $projets[0]->nom;
+            $nom= $projets[0]->projet;
             
             $description= $projets[0]->description;
             

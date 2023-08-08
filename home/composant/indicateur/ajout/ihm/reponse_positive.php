@@ -15,7 +15,7 @@
 <div class="row">
 
 <div class="col-md-12">
-	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de la création du nouveau indicateur ci-dessous est executée avec success. <br><br> <?php require_once('composant/agent/importer_photo/ihm/ajout_photo.php');?></div>
+	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de la création du nouveau indicateur ci-dessous est executée avec success.</div>
 </div>
 
 </div>

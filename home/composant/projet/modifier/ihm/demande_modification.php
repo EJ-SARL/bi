@@ -39,7 +39,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="nom" class="form-control" value=<?php echo $nom;?> placeholder="nom de l'indicateur" required="required">
+									<input type="text" name="nom" class="form-control" value='<?php echo $nom;?>' placeholder="nom de l'indicateur" required="required">
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
@@ -50,7 +50,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="description" class="form-control" value=<?php echo $description;?> placeholder=" description" required="required">
+									<input type="text" name="description" class="form-control" value='<?php echo $description;?>' placeholder=" description" required="required">
 									<span class="input-group-addon"><i class=""></i></span>
 								</div>
 							</div>

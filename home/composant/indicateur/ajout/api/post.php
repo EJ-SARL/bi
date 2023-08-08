@@ -26,7 +26,7 @@ $code =   $indicateurs->code;
 if($code ==201)
         {   
             $projet =  $indicateurs->projet;
-            $nom =  $indicateurs->nom;
+            $nom =  $indicateurs->indicateur;
             $description =  $indicateurs->description;
             $frequence = $indicateurs->frequence;
             $ordre = $indicateurs->ordre;
