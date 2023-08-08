@@ -29,16 +29,11 @@
 			<ul id="main-menu" class="main-menu">
 			
 				
-				<li>
-							<a href="?home">
-							<i class="fa fa-bar-chart"></i>
-								<span class="title">Business intelligence</span>
-							</a>
-							<ul >
+				
 
 								<li>
 										<a href="??home">
-										<i class="fa-solid fa-list"></i>
+										<i class="fa fa-bar-chart"></i>
 											<span class="title">Projet</span>
 										</a>
 					 					<ul >
@@ -106,8 +101,8 @@
 							</a>
 						</li>
 						
-					</ul>
-				</li> 
+					
+				
 
 			
 
