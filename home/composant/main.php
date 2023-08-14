@@ -189,24 +189,23 @@
                     //Composant1 : recuperer la reponse de la demande
                     require_once('composant/projet/supprimer/api/get_ressource.php'); 
                 }
-                if($page=='ajouter_repartition')
+                if($page=='repartition')
                 {
                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/repartition/ajout/api/get_parametres.php');
-
-                    
+                    require_once('composant/repartition/api/get_ressources.php');
+    
                 }
                 if($page=='historique')
                 {
                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/historique/visualisation/index.php'); 
+                    require_once('composant/historique/api/get_ressources.php');
 
                     
                 }
-                if($page=='ajouter_progression')
+                if($page=='progression')
                 {
                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/progression/ajout/api/get_parametres.php'); 
+                    require_once('composant/progression/api/get_ressources.php');
 
                     
                 }

@@ -82,7 +82,7 @@
 						</li>
 
 						<li>
-							<a href="?page=ajouter_repartition">
+							<a href="?page=repartition">
 							<i class="fa fa-exchange"></i>
 								<span class="title">Repartition</span>
 							</a>
@@ -95,7 +95,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="?page=ajouter_progression">
+							<a href="?page=progression">
 							<i class="fa fa-bar-chart"></i>
 								<span class="title"> Progression</span>
 							</a>
